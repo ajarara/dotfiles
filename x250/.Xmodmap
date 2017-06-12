@@ -1,0 +1,30 @@
+
+
+! swap caps to control
+! remove modifiers from the relevant keys
+remove Lock = Caps_lock
+remove Control = Control_L
+! remap the key labelled Ctrl to send Caps_Lock
+
+! remap the key labelled Caps_Lock to Ctrl
+
+! readd their modifiers
+add Lock = Caps_Lock
+add Control = Control_L
+
+! make right button alt-y
+! make pipe key our new alt. We need a key that exists.
+
+! now add the alt signal to it.
+! add mod1 = $$
+
+! make semicolon mode switch
+! keycode $$ = Mode_switch Mode_switch Mode_switch
+
+! x X bar
+! s S backslash
+! d D colon
+! e E semicolon
+! q Q question
+
+
