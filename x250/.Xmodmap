@@ -1,30 +1,55 @@
 
-
 ! swap caps to control
 ! remove modifiers from the relevant keys
-remove Lock = Caps_lock
+remove Lock = Caps_Lock
 remove Control = Control_L
 ! remap the key labelled Ctrl to send Caps_Lock
+keycode 37 = Caps_Lock
 
 ! remap the key labelled Caps_Lock to Ctrl
+keycode 66 = Control_L
 
 ! readd their modifiers
 add Lock = Caps_Lock
 add Control = Control_L
 
+! here is where the sane config stops
+
+! make super Alt Gr
+! 133 multi_key
+remove mod4 = Super_L
+keycode 133 = Multi_key Multi_key Multi_key
+
+! make right control super
+remove Control = Control_R
+keycode 105 = Super_L Super_L
+add mod4 = Super_L
+
+! make right alt control
+remove mod1 = Alt_R
+keycode 108 = Control_R Control_R
+add Control = Control_R
+
 ! make right button alt-y
 ! make pipe key our new alt. We need a key that exists.
-
-! now add the alt signal to it.
-! add mod1 = $$
+keycode 51 = Alt_R
+add mod1 = Alt_R
 
 ! make semicolon mode switch
-! keycode $$ = Mode_switch Mode_switch Mode_switch
+keycode 47 = Mode_switch Mode_switch Mode_switch
 
-! x X bar
-! s S backslash
-! d D colon
-! e E semicolon
-! q Q question
+! 53 x X bar
+keycode 53 = x X bar
 
+! 39 s S backslash
+keycode 39 = s S backslash
+
+! 40 d D colon
+keycode 40 = d D colon
+
+! 26 e E semicolon
+keycode 26 = e E semicolon
+
+! 24 q Q question
+keycode 24 = q Q question
 
