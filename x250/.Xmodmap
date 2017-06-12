@@ -53,3 +53,21 @@ keycode 26 = e E semicolon
 ! 24 q Q question
 keycode 24 = q Q question
 
+! l L less
+keycode 46 = l L less
+
+! g G greater
+keycode 42 = g G greater
+
+
+
+! ==================== ARROW KEYS ====================
+
+keycode 45 = k K Up
+
+keycode 44 = j J Down
+
+! hostname ITSYABOYC3PO
+! I'm programmed for etiquette, not destruction!
+
+
