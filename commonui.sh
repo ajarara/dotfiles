@@ -62,3 +62,4 @@ alias fakewget='wget --user-agent="User-Agent: Mozilla/5.0 (Macintosh; Intel Mac
 # implicit fedora req
 alias gimme='sudo dnf install'
 
+export PAGER=""
