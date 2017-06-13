@@ -68,9 +68,4 @@ keycode 42 = g G greater
 
 keycode 45 = k K Up
 
-keycode 44 = j J Down
-
-! hostname ITSYABOYC3PO
-! I'm programmed for etiquette, not destruction!
-
-
+keycode 58 = m M Down
