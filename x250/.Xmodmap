@@ -47,6 +47,9 @@ keycode 38 = a A quotedbl
 ! 39 s S backslash
 keycode 39 = s S backslash
 
+! 65 b B backslash
+keycode 65 b B backslash
+
 ! 40 d D colon
 keycode 40 = d D colon
 
