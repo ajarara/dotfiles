@@ -2,3 +2,5 @@
 
 . ~/dotfiles/common.sh
 . ~/dotfiles/commonui.sh
+
+. ~/dotfiles/source-me-last.sh

@@ -41,6 +41,9 @@ keycode 47 = Mode_switch Mode_switch Mode_switch
 ! 53 x X bar
 keycode 53 = x X bar
 
+! 38 a A quotedbl
+keycode 38 = a A quotedbl
+
 ! 39 s S backslash
 keycode 39 = s S backslash
 

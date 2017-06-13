@@ -50,8 +50,8 @@ alias alert="notify-send \'Thing returned!\'"
 alias ec='emacsclient -n'
 
 # ugh... this is gross but it's necessary grossness
-alias pipgimme='pip install --user'
-alias pipthrow='pip uninstall'
+alias pipgimme='pip3 install --user'
+alias pipthrow='pip3 uninstall'
 
 alias munch="youtube-dl -o '%(title)s.%(ext)s' --extract-audio --audio-format mp3"
 
