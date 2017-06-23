@@ -1,9 +1,12 @@
 
-# here's an example that overrides gpmdp's gtk (won't work at runtime,
-# but compiles just fine)
-# {
-#   packageOverrides = pkgs: {
-#     google-play-music-desktop-player =
-#       pkgs.google-play-music-desktop-player.override { gtk2 = pkgs.gnome3.gtk; };
-#   };
-# }
+
+        # not actually used here, but a good example of what config.nix can do
+{
+  packageOverrides = pkgs: {
+    znc = pkgs.znc.override {
+      withPython = true;
+      withPerl = true;
+    };
+  };
+}
+

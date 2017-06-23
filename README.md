@@ -18,3 +18,5 @@ The only problem is symlinks aren't decided here, which presents two problems:
 The latter means I need to decide on a common absolute directory. `dotfiles` is fine.
 
 
+# Nix package configuration
+If I can't find a library or something in nixpkgs, I'll add it to the override section in `config.nix`, so that I can use the definition across all projects. So far there is only the need to compile ZNC with python (for messing about with its extension interface).
