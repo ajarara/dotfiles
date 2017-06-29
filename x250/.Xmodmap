@@ -65,7 +65,10 @@ keycode 46 = l L less
 ! g G greater
 keycode 42 = g G greater
 
+! ==================== NUMBER KEYS ====================
 
+! 1 ! !
+keycode 10 = 1 exclam exclam
 
 ! ==================== ARROW KEYS ====================
 
