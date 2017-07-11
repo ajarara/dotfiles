@@ -65,6 +65,6 @@ alias gimme='sudo dnf install'
 export SYSTEMD_PAGER=""
 
 if [[ "$TERM" == "eterm-color" || "$TERM" == "dumb" ]]; then
-    export PS1="[ \W ]\$ "
+    export PS1="\w$ "
 fi
 
