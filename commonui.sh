@@ -34,8 +34,8 @@ function my-nix-gen-closure-for () {
 
 # Whenever people see a bunch of text I love showing them this.
 function hack {
-        echo "You want me to hack $1" "?!? Sure."
-	sudo tcpdump -i wlp4s0 -v
+        echo "You want me to hack $1?!? Sure."
+	sudo tcpdump -i wlp3s0 -v
 }
 
 

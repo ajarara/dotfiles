@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# put this in /etc/pm/power.d/wireless
+# this ignores all advertisements to limit token power. A little over
+# the top but I keep getting booted from the network
+
+/sbin/iwconfig wlp3s0 power off
