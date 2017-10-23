@@ -20,3 +20,9 @@ The latter means I need to decide on a common absolute directory. `dotfiles` is 
 
 # Nix package configuration
 If I can't find a library or something in nixpkgs, I'll add it to the override section in `config.nix`, so that I can use the definition across all projects. So far there is only the need to compile ZNC with python (for messing about with its extension interface).
+
+# .config clobbering auto generated config
+To avoid this problem I rsync the .config generated here into $XDG_CONF_DIR
+
+This way I version the things I want, without having to pollute my .gitignore with a bunch of auto generated stuff or deal with nested exclusions by blacklisting the whole directory and including the things that I do want VC'd... to [quote David Beasley](https://youtu.be/MCs5OvhV9S4?t=996): bah.
+

@@ -1,7 +1,7 @@
 
 
-        # not actually used here, but a good example of what config.nix can do
 {
+  allowUnfree = true;
   packageOverrides = pkgs: {
     znc = pkgs.znc.override {
       withPython = true;
