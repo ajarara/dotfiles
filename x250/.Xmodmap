@@ -11,17 +11,17 @@
 
 ! swap caps to control
 ! remove modifiers from the relevant keys
-! remove Lock = Caps_Lock
-! remove Control = Control_L
+remove Lock = Caps_Lock
+remove Control = Control_L
 ! remap the key labelled Ctrl to send Caps_Lock
-! keycode 37 = Caps_Lock
+keycode 37 = Caps_Lock
 
 ! remap the key labelled Caps_Lock to Ctrl
-! keycode 66 = Control_L
+keycode 66 = Control_L
 
 ! readd their modifiers
-! add Lock = Caps_Lock
-! add Control = Control_L
+add Lock = Caps_Lock
+add Control = Control_L
 
 ! here is where the reasonable config stops
 
