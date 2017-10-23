@@ -1,19 +1,29 @@
 
+! I'm testing out keeping control control
+! what I want to do is keep usage of my left pinky to a minimum
+! and one way to do that is to stop chording with it.
+! it will be missed but at the same time I can't keep using it
+! as I'm starting to feel a dull pain in my left pinky
+! :(
+! instead I use the palm of my pinky to press down on control
+! this is just a slight movement of the wrist.
+
+
 ! swap caps to control
 ! remove modifiers from the relevant keys
-remove Lock = Caps_Lock
-remove Control = Control_L
+! remove Lock = Caps_Lock
+! remove Control = Control_L
 ! remap the key labelled Ctrl to send Caps_Lock
-keycode 37 = Caps_Lock
+! keycode 37 = Caps_Lock
 
 ! remap the key labelled Caps_Lock to Ctrl
-keycode 66 = Control_L
+! keycode 66 = Control_L
 
 ! readd their modifiers
-add Lock = Caps_Lock
-add Control = Control_L
+! add Lock = Caps_Lock
+! add Control = Control_L
 
-! here is where the sane config stops
+! here is where the reasonable config stops
 
 ! make super Alt Gr
 ! 133 multi_key
