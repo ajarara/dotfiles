@@ -57,6 +57,9 @@ keycode 38 = a A quotedbl
 ! 39 s S backslash
 keycode 39 = s S backslash
 
+! 54 c C backspace
+keycode 54 = c C BackSpace
+
 ! 56 b B backslash
 keycode 56 = b B backslash
 

@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-
 function myxcape {
     xcape -e 'Control_L=Escape;Control_R=Escape;Shift_R=parenleft;Shift_L=parenright' -t 250
 }
