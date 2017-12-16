@@ -1,4 +1,3 @@
-
 ! I'm testing out keeping control control
 ! what I want to do is keep usage of my left pinky to a minimum
 ! and one way to do that is to stop chording with it.
@@ -45,46 +44,5 @@ add Control = Control_R
 keycode 51 = Alt_R
 add mod1 = Alt_R
 
-! make semicolon mode switch
-keycode 47 = Mode_switch Mode_switch Mode_switch
-
-! 53 x X bar
-keycode 53 = x X bar
-
-! 38 a A quotedbl
-keycode 38 = a A quotedbl
-
-! 39 s S backslash
-keycode 39 = s S backslash
-
-! 54 c C backspace
-keycode 54 = c C BackSpace
-
-! 56 b B backslash
-keycode 56 = b B backslash
-
-! 40 d D colon
-keycode 40 = d D colon
-
-! 26 e E semicolon
-keycode 26 = e E semicolon
-
-! 24 q Q question
-keycode 24 = q Q question
-
-! l L less
-keycode 46 = l L less
-
-! g G greater
-keycode 42 = g G greater
-
-! ==================== NUMBER KEYS ====================
-
-! 1 ! !
-keycode 10 = 1 exclam exclam
-
-! ==================== ARROW KEYS ====================
-
-keycode 45 = k K Up
-
-keycode 58 = m M Down
+! we need this here so xcape can send it
+keycode 255 = backslash bar

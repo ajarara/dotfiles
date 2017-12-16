@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 function myxcape {
-    xcape -e 'Control_L=Escape;Control_R=Escape;Shift_R=parenleft;Shift_L=parenright' -t 250
+    xcape -e 'Control_L=Escape;Control_R=Escape;Shift_R=parenleft;Shift_L=parenright;Alt_R=backslash' -t 250
 }
 
 function fixcape {
