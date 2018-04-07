@@ -7,6 +7,12 @@
       withPython = true;
       withPerl = true;
     };
+    all = pkgs.buildEnv {
+      name = "all";
+      paths = [
+        pkgs.emacs
+      ];
+      };
   };
 }
 
