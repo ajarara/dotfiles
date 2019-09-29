@@ -1,0 +1,4 @@
+URxvt.background: Black
+URxvt.foreground: AntiqueWhite
+URxvt.scrollBar: false
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=14:foundry=PfEd:weight=normalwidth=normal:spacing=100:scalable=true
