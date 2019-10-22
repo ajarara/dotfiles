@@ -4,5 +4,6 @@
     call plug#begin(stdpath('data') . '/plugged')
 
     Plug 'dense-analysis/ale'
+    Plug 'Lnl/vim-nix'
 
     call plug#end()
