@@ -5,5 +5,6 @@
 
     Plug 'dense-analysis/ale'
     Plug 'LnL7/vim-nix'
+    Plug 'tpope/vim-fugitive'
 
     call plug#end()
