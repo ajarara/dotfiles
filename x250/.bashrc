@@ -88,6 +88,12 @@ fi
 
 alias nix-query-ocaml='nix-env -qaP -A nixpkgs.ocamlPackages '
 
+export FZF_DEFAULT_COMMAND="ag --hidden --ignore .git -l -g \"\""
+function kotlin-lsp-shiv() {
+	cd ~/Documents/projects/KotlinLanguageServer
+	./gradlew -q run
+}
+
 . ~/dotfiles/secrets.sh
 
 
@@ -100,3 +106,5 @@ alias nix-query-ocaml='nix-env -qaP -A nixpkgs.ocamlPackages '
 #        tmux attach-session -t "$ID" # if available attach to it
 #    fi
 #fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

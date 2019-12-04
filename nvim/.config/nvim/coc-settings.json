@@ -1,0 +1,10 @@
+{
+	"languageserver": {
+		"kt" : {
+			"command": "kotlin-lsp-shiv",
+			"args": [],
+			"filetypes": ["kt"]
+		}
+	}
+}
+			
