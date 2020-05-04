@@ -19,27 +19,6 @@ alias ..='cd ..'
 export EDITOR='emacsclient -c --alternate-editor=""'
 export PYTHONDONTWRITEBYTECODE=1
 
-function myxcape {
-    xcape -e 'Control_L=Escape;Control_R=Escape;Shift_R=parenleft;Shift_L=parenright;Alt_R=backslash' -t 250
-}
-
-function fixcape {
-    
-    echo "killing all xcape config"
-    pkill xcape
-    
-    echo "giving xmodmap base configuration"
-    xmodmap ~/.Xmodmapdefaults
-    
-    echo "calling xmodmap"
-    xmodmap ~/.Xmodmap
-    
-    echo "calling xcape"
-    myxcape
-    
-    echo "done!"
-}
-
 # first arg is the output file name, all other args are sequentially merged together
 function mergePDFs {
 	gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=${@:1} ${@:2:$#}
