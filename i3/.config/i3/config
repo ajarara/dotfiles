@@ -173,4 +173,6 @@ bar {
 
 # cycle: 100% of the time I just have two things running side by side.
 bindsym $mod+t focus left
+
 bindsym Shift+Home exec toggle-monitors
+bindsym Shift+End exec fixcape
