@@ -171,6 +171,9 @@ bar {
 	position top
 }
 
+# suddenly nixos leaks the display manager screen. This is a nice background.
+exec --no-startup-id xsetroot -solid "#002244"
+
 # cycle: 100% of the time I just have two things running side by side.
 bindsym $mod+t focus left
 
