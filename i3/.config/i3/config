@@ -179,3 +179,5 @@ bindsym $mod+t focus left
 
 bindsym Shift+Home exec toggle-monitors
 bindsym Shift+End exec fixcape
+bindsym Shift+F2 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym Shift+F3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
