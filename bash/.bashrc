@@ -29,12 +29,13 @@ function my-nix-gen-closure-for () {
     nix-store --export $(nix-store -qR $(type -p $1)) > $1.closure
 }
 
-# Whenever people see a bunch of text I love showing them this.
-function hack {
-        echo "You want me to hack $1?!? Sure."
-	sudo tcpdump -i wlp3s0 -v
-}
+function fixcape {
 
+	pkill xcape
+	xmodmap ~/.Xmodmapdefaults
+	xmodmap ~/.Xmodmap
+	xcape -e 'Control_L=Escape;Control_R=Escape;Shift_R=parenleft;Shift_L=parenright;Alt_R=backslash' -t 250
+}
 
 alias inputlist='xinput list'
 alias pg='pgrep -af'
@@ -73,19 +74,6 @@ function kotlin-lsp-shiv() {
 	./gradlew -q run
 }
 
-. ~/dotfiles/secrets.sh
-
-
-# starting tmux, should ALWAYS be last block in bashrc
-#if [[ -z "$TMUX" && "$TERM" != "eterm-color" && "$TERM" != "dumb" ]] ;then
-#    ID="`tmux ls | grep -vm1 attached | cut -d: -f1`" # get the id of a deattached session
-#    if [[ -z "$ID" ]] ;then # if not available create a new one
-#        tmux new-session
-#    else
-#        tmux attach-session -t "$ID" # if available attach to it
-#    fi
-#fi
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+gpg-connect-agent updatestartuptty /bye >> /dev/null
 
 eval "$(direnv hook bash)"
