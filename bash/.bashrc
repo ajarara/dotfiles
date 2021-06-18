@@ -18,6 +18,10 @@ alias ..='cd ..'
 export EDITOR='emacsclient -c --alternate-editor=""'
 export PYTHONDONTWRITEBYTECODE=1
 
+function restic-b2-x250 {
+    sh -c "$(pass show restic.sh)" sh "$@"
+}
+
 # first arg is the output file name, all other args are sequentially merged together
 function mergePDFs {
 	gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=${@:1} ${@:2:$#}
