@@ -51,8 +51,4 @@ fi
 
 export FZF_DEFAULT_COMMAND="ag --hidden --ignore .git -l -g \"\""
 
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-gpg-connect-agent updatestartuptty /bye >> /dev/null
-gpgconf --launch gpg-agent
-
 eval "$(direnv hook bash)"
