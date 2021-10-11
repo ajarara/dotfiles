@@ -10,7 +10,6 @@ alias l='ls -al'
 alias ..='cd ..'
 
 export EDITOR='emacsclient -c --alternate-editor=""'
-export PYTHONDONTWRITEBYTECODE=1
 
 function restic-b2-x250 {
     sh -c "$(pass show restic.sh)" sh "$@"
