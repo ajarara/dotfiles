@@ -27,13 +27,6 @@ function mergePDFs {
 	gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=${@:1} ${@:2:$#}
 }
 
-function fixcape {
-	pkill xcape
-	xmodmap ~/.Xmodmapdefaults
-	xmodmap ~/.Xmodmap
-	xcape -e 'Control_L=Escape;Control_R=Escape;Shift_R=parenleft;Shift_L=parenright;Alt_R=backslash' -t 250
-}
-
 alias inputlist='xinput list'
 alias pg='pgrep -af'
 alias md='mkdir'
