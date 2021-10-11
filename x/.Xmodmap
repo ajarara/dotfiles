@@ -12,6 +12,7 @@
 ! remove modifiers from the relevant keys
 remove Lock = Caps_Lock
 remove Control = Control_L
+
 ! remap the key labelled Ctrl to send Caps_Lock
 keycode 37 = Caps_Lock
 
@@ -22,27 +23,12 @@ keycode 66 = Control_L
 add Lock = Caps_Lock
 add Control = Control_L
 
-! here is where the reasonable config stops
-
-! make super Alt Gr
-! 133 multi_key
-remove mod4 = Super_L
-keycode 133 = Multi_key Multi_key Multi_key
-
-! make right control super
+! remove modifer from right control
 remove Control = Control_R
-keycode 105 = Super_L Super_L
-add mod4 = Super_L
 
-! make right alt control
-remove mod1 = Alt_R
-keycode 108 = Control_R Control_R
+! send Control_R on PrtSc
+keycode 107 = Control_R
 add Control = Control_R
 
-! make right button alt-y
-! make pipe key our new alt. We need a key that exists.
-keycode 51 = Alt_R
-add mod1 = Alt_R
+keycode 105 = Print
 
-! we need this here so xcape can send it
-keycode 255 = backslash bar
