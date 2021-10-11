@@ -5,12 +5,6 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-function sdstat {
-    command systemctl status "$@" --no-pager -l
-}
-
-# export PATH="$HOME/.cargo/bin:$PATH"
-
 alias ll='ls -als'
 alias l='ls -al'
 alias ..='cd ..'
