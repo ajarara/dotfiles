@@ -11,8 +11,8 @@ alias ..='cd ..'
 
 export EDITOR='emacsclient -c --alternate-editor=""'
 
-function restic-b2-x250 {
-    sh -c "$(pass show restic.sh)" sh "$@"
+function pass-exec {
+    sh -c "$(pass show $1)" sh "${@:2}"
 }
 
 # first arg is the output file name, all other args are sequentially merged together
