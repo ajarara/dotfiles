@@ -1,15 +1,5 @@
-! I'm testing out keeping control control
-! what I want to do is keep usage of my left pinky to a minimum
-! and one way to do that is to stop chording with it.
-! it will be missed but at the same time I can't keep using it
-! as I'm starting to feel a dull pain in my left pinky
-! :(
-! instead I use the palm of my pinky to press down on control
-! this is just a slight movement of the wrist.
-
-
-! swap caps to control
-! remove modifiers from the relevant keys
+!! swap caps to control
+! remove modifiers from the relevant keysyms
 remove Lock = Caps_Lock
 remove Control = Control_L
 
@@ -23,12 +13,16 @@ keycode 66 = Control_L
 add Lock = Caps_Lock
 add Control = Control_L
 
-! remove modifer from right control
+!! swap PrtSc and Control_R, send super on Control_R
 remove Control = Control_R
+remove mod4 = Super_R
 
 ! send Control_R on PrtSc
-keycode 107 = Control_R
-add Control = Control_R
+keycode 107 = Control_R Control_R
+keycode 105 = Super_R Super_R
 
-keycode 105 = Print
+! (re) add their modifiers
+add Control = Control_R
+add mod4 = Super_R
+
 
