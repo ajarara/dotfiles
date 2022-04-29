@@ -18,6 +18,7 @@ declare -a stow_commands=(
     "i3"
     "x"
     "bash"
+    "alacritty"
 )
 
 for cmd in "${stow_commands[@]}"
