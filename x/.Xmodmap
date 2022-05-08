@@ -1,28 +1,17 @@
-!! swap caps to control
-! remove modifiers from the relevant keysyms
-remove Lock = Caps_Lock
-remove Control = Control_L
-
-! remap the key labelled Ctrl to send Caps_Lock
-keycode 37 = Caps_Lock
-
-! remap the key labelled Caps_Lock to Ctrl
-keycode 66 = Control_L
-
-! readd their modifiers
-add Lock = Caps_Lock
-add Control = Control_L
-
-!! swap PrtSc and Control_R, send super on Control_R
+!! swap right alt for control
 remove Control = Control_R
-remove mod4 = Super_R
+remove Mod1 = Alt_R
 
-! send Control_R on PrtSc
-keycode 107 = Control_R Control_R
-keycode 105 = Super_R Super_R
+! send Control on right Alt
+keycode 108 = Control_R Control_R
 
-! (re) add their modifiers
+! send Alt on PrtSc
+keycode 107 = Alt_R Alt_R
+
+! send PrtSc on right Ctrl
+keycode 105 = Print Sys_Req Print Sys_Req
+
+! (re) add modifiers
 add Control = Control_R
-add mod4 = Super_R
-
+add Mod1 = Alt_R
 

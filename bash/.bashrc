@@ -9,6 +9,7 @@ alias ll='ls -als'
 alias l='ls -al'
 alias ..='cd ..'
 
+export TERM=xterm-256color
 export EDITOR='emacsclient -c --alternate-editor=""'
 
 function pass-exec {
